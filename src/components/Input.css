@@ -1,0 +1,181 @@
+.form {
+  display: flex;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 auto 16px auto;
+  padding: 10px;
+  width: 90%;
+  max-width: 700px;
+  background-color: var(--card-color);
+  border-radius: 10px;
+  box-shadow: 0px 10px 37px -18px black;
+}
+
+.form input {
+  padding: 10px;
+  font-size: 16px;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+}
+
+.form div {
+  display: flex;
+  flex-direction: row;
+  /* column-gap: 10px; */
+}
+
+.form button {
+  height: 100%;
+  padding: 15px 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--btn-color);
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.form button:hover {
+  opacity: 0.8;
+}
+
+.form input,
+.form textarea {
+  color: var(--logo-color);
+}
+
+
+input:focus{
+  /* border: 3px red solid; */
+  outline: none;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  /* max-width: 400px; */
+  margin: 0 auto;
+  padding: 10px; /* Add padding for better spacing on small screens */
+}
+
+.upload_section {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Align the input and button horizontally */
+  justify-content: space-between; /* Space between input and button */
+  width: 100%; /* Make the container full width */
+  margin-bottom: 10px;
+}
+
+.fileInput {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px; /* Space between file input and button */
+  flex-grow: 1; /* Make the input take up available space */
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  width: 50%;
+}
+
+button:disabled {
+  background-color: #ccc;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px; /* Space between file upload and error message */
+}
+
+.upload_section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.custom_file_label {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.custom_file_label:hover {
+  background-color: #0056b3;
+}
+
+.hidden_file_input {
+  display: none; /* Hide the default file input */
+}
+
+.file_name {
+  margin-right: 75px;
+  margin-top: 7px;
+  font-size: 17px;
+  color: #333;
+  font-weight: bold;
+  font-family: cursive;
+}
+
+.upload_section button {
+  padding: 10px 20px;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+
+
+
+/* Media queries for responsiveness */
+@media (320px <= width <=480px){
+  .form{
+    width: 90%;
+  }
+  .form .upload_section {
+    width: 90%;
+    flex-direction: column; /* Stack the file input and button vertically */
+  }
+
+  .fileInput {
+    margin-right: 0; /* Remove the right margin */
+    margin-bottom: 10px; /* Add some space below the file input */
+  }
+
+  button {
+    width: 100%; /* Make the button full width on small screens */
+  }
+}
