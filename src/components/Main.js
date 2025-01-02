@@ -36,7 +36,7 @@ const Main = () => {
       console.log("FormData content:", formData.get("img_url"));
 
       const response = await fetch(
-        `http://127.0.0.1:8000/caption_generator_api/caption_generator`,
+        `https://captionbuddy-849413316122.us-central1.run.app/caption_generator_api/caption_generator`,
         {
           method: "POST",
           headers: { accept: "application/json" },
