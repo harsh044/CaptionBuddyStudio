@@ -51,6 +51,13 @@ body.light .upload_section span{
 body.dark .upload_section span{
   color: white;
 }
+body.light .coffee_icon{
+  filter: brightness(0) saturate(100%) invert(45%) sepia(93%) saturate(390%) hue-rotate(85deg) brightness(92%) contrast(95%);
+}
+body.light .upload_section a{
+  filter: brightness(0) saturate(100%) invert(45%) sepia(93%) saturate(390%) hue-rotate(85deg) brightness(92%) contrast(95%);
+}
+
 
 a {
   text-decoration: none;

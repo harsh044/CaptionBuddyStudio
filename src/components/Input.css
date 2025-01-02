@@ -87,7 +87,7 @@ button {
   border: none;
   cursor: pointer;
   border-radius: 4px;
-  width: 50%;
+  /* width: 50%; */
 }
 
 button:disabled {
@@ -157,6 +157,15 @@ button:hover {
   margin-top: 5px;
 }
 
+.upload_section a{
+  color: yellow;
+  font-family: cursive;
+}
+
+.coffee_icon {
+  margin-left: 0.5rem;
+  filter: brightness(0) saturate(100%) invert(62%) sepia(74%) saturate(532%) hue-rotate(1deg) brightness(103%) contrast(200%);
+}
 
 
 

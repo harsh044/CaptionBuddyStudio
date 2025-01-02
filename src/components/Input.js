@@ -1,5 +1,6 @@
 import React from "react";
 import "./Input.css";
+import Coffee from "../images/mug-hot-solid.svg";
 
 const Input = ({ file, setFile, uploadImage, error,loading }) => {
   const handleFileChange = (e) => {
@@ -13,6 +14,7 @@ const Input = ({ file, setFile, uploadImage, error,loading }) => {
 
   return (
     <form className="form" onSubmit={handleSubmit}>
+
       <div className="upload_section">
         {/* Custom File Input */}
         <label htmlFor="fileInput" className="custom_file_label">
@@ -25,13 +27,16 @@ const Input = ({ file, setFile, uploadImage, error,loading }) => {
           className="hidden_file_input"
         />
         {file && <span className="file_name">{file.name}</span>}
-
-        {/* Upload button */}
-        <button type="button" onClick={uploadImage} disabled={loading}>
+        
+        {/* Generate Captions Button */}
+        <button type="button" onClick={uploadImage} disabled={loading} className="generate_button">
           Generate Captions
         </button>
-      </div>
 
+        {/* Razorpay Button */}
+        <a href="https://rzp.io/rzp/VCeWG1a" target="_blank" rel="noreferrer"><img src={Coffee} alt="Coffee Icon" width="24" height="24" className="coffee_icon"/> Buy Me a Coffee </a>
+        {/* <button className="pay_button"> */}
+      </div>
       {/* Error message */}
       {error && <p className="error">{error}</p>}
     </form>
